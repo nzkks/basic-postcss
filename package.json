@@ -9,6 +9,8 @@
   "author": "Shanthosh Krishnakumar",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "csswring": "^5.1.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0"
   }
 }
