@@ -11,6 +11,7 @@
   "devDependencies": {
     "csswring": "^5.1.1",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^6.3.0"
+    "gulp-postcss": "^6.3.0",
+    "gulp-sass": "^3.1.0"
   }
 }
