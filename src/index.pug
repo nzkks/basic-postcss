@@ -5,25 +5,66 @@ html(lang='en')
     title PostCSS
     link(rel='stylesheet', href='styles.css')
   body
-    section.grid-one
-      .grid-item
-        .nested-grid-item a
-        .nested-grid-item b
-      .grid-item 2
-      .grid-item 3
-      .grid-item 4
-      .grid-item 5
-    // Asymmetrical row //
-    section.grid-two
-      .grid-item
-        .nested-grid-item a
-        .nested-grid-item b
-      .grid-item 2
-      .grid-item 3
-    // Responsive grid
-    section.grid-three
-      .grid-item 1
-      .grid-item 2
-      .grid-item 3
-      .grid-item 4
-      .grid-item 5
+    .wrapper
+      section.grid-one
+        .item
+          .nested-item a
+          .nested-item b
+        .item 2
+        .item 3
+        .item 4
+        .item 5
+      // Asymmetrical row
+      section.grid-two
+        .item 1
+        .item 2
+        .item 3
+      // Responsive grid
+      section.grid-three
+        .item
+          span 1
+        .item
+          span 2
+        .item
+          span 3
+        .item
+          span 4
+        .item
+          span 5
+      // Vertical grid
+      section.grid-four
+        .item 1
+        .item 2
+        .item 3
+        .item 4
+        .item 5
+      br
+      br
+      // Waffle grid - combination of vertical and horizontal grids
+      section.grid-five
+        .item 1
+        .item 2
+        .item 3
+        .item 4
+        .item 5
+        .item 6
+        .item 7
+        .item 8
+        .item 9
+        .item 10
+      // Flexbox based grid
+      section.grid-six
+        .item 1
+        .item 2
+        .item 3
+        .item 4
+        .item 5
+      // Masonry based grid - need to load isotope jquery plugin
+      section.grid-seven
+        .item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .item 2
+        .item 3
+        .item 4
+        .item 5
+      section
+        p.responsive Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

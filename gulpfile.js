@@ -3,9 +3,10 @@ var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 // var csswring = require('csswring'); // Minify CSS using PostCSS
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 var lost = require('lost'); // lost grid system for postcss
 var pug = require('gulp-pug');
+var rucksack = require('rucksack-css');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass', 'pug'], function() {
@@ -22,7 +23,8 @@ gulp.task('serve', ['sass', 'pug'], function() {
 gulp.task('sass', function(){
   var processors = [
     lost,
-    autoprefixer({browsers: ['last 2 version']})
+    rucksack,
+    autoprefixer({browsers: ['last 2 versions']})
   ];
 
   return gulp.src('./src/styles.sass')
